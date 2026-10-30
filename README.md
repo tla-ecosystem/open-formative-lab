@@ -9,19 +9,6 @@ OFAL helps edtech developers *see*, *try*, and *adopt* open education resources 
 ## Why
 Open resources for AI in education exist, but developers rarely use them. Each one takes weeks to find, license-check, wire up, and evaluate. OFAL aims to cut that friction and make the benefit measurable, while teachers stay in the loop and in control.
 
-## What's planned
-| Component | Purpose |
-|---|---|
-| **Journey generator** | AI builds standard cmi5 learning journeys from grade level and learning objectives |
-| **Barebones cmi5 LMS** | A lightweight, standalone cmi5 player |
-| **Teacher console** | Approve journeys, control gates, override AI decisions, see alerts |
-| **xAPI auth proxy** | Security and scoped queries for teacher and AI apps ([xapi-lrs-auth-proxy](https://github.com/tla-ecosystem/xapi-lrs-auth-proxy)) |
-| **LRS-agnostic storage** | Works with any conformant xAPI LRS |
-| **Learner state service** | Turns xAPI evidence into learner states, following emerging IEEE learner-state work |
-| **Simulation sandbox** | Simulated students and teachers generate open, synthetic xAPI data |
-| **Evaluation harness** | Benchmarks and A/B tests to show what actually helps |
-| **Dataset adapters** | Bring open datasets into xAPI and competency formats in minutes, not weeks |
-
 ## How it fits together
 OFAL connects a journey generator, a lightweight cmi5 player, and a teacher console through a secured xAPI layer, so every AI and teacher decision becomes open, inspectable data.
 
