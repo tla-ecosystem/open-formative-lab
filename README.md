@@ -22,23 +22,8 @@ Open resources for AI in education exist, but developers rarely use them. Each o
 | **Evaluation harness** | Benchmarks and A/B tests to show what actually helps |
 | **Dataset adapters** | Bring open datasets into xAPI and competency formats in minutes, not weeks |
 
-## Architecture
-```mermaid
-flowchart LR
-  G[Journey generator] -->|cmi5 package| C[cmi5 LMS]
-  T[Teacher console] --> G
-  S[Student or simulated student] --> C
-  C -->|xAPI| P[xAPI auth proxy]
-  T -->|scoped queries| P
-  A[AI tutor app] -->|scoped queries| P
-  P --> L[(Any LRS)]
-  L --> I[Learner state service]
-  I --> T
-  I --> A
-  D[Open datasets] --> G
-  D --> I
-  L --> E[Evaluation]
-```
+## How it fits together
+OFAL connects a journey generator, a lightweight cmi5 player, and a teacher console through a secured xAPI layer, so every AI and teacher decision becomes open, inspectable data.
 
 ## Teacher–AI coordination (planned)
 1. AI drafts a learner journey, and the teacher approves it.
